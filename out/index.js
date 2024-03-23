@@ -1,0 +1,21 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var soma_1 = __importDefault(require("./soma"));
+var subtracao_1 = __importDefault(require("./subtracao"));
+var duvisao_1 = __importDefault(require("./duvisao"));
+var multiplicacao_1 = __importDefault(require("./multiplicacao"));
+var divisao = new duvisao_1.default();
+var Subtracao = new subtracao_1.default();
+var soma = new soma_1.default();
+var multiplica = new multiplicacao_1.default();
+var resultadoDivisao = divisao.calcular(22, 33);
+var resultadoSubtracao = Subtracao.calcular(22, 33);
+var resultadoSoma = soma.calcular(22, 33);
+var resultadoMultiplicacao = multiplica.calcular(22, 33);
+console.log(resultadoDivisao);
+console.log(resultadoSubtracao);
+console.log(resultadoSoma);
+console.log(resultadoMultiplicacao);
